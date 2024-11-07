@@ -5,8 +5,36 @@ body {
     flex-direction: column;
 }
 
-.header, .sec-1, .footer {
+.wideback1, .wideback-quote, .wideback-CTA, .wideback-footer {
+    width: 100vw;
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wideback1 {
+    flex-direction: column;
+    background-color: #1F2937;
+}
+
+.wideback-quote {
+    background-color: #e5e7eb;
+}
+
+.wideback-footer {
+    background-color: #1F2937;
+    padding: 20px;
+    margin: 0;
+}
+
+.header, .sec-1, .sec-main, .quotebox, .CTA, .footer {
+    display: flex;
+    width: 100%;
+    max-width: 1000px;
+    align-self: center;
+}
+
+.header, .sec-1, .footer {
     background-color: #1F2937;
     color: #F9FAF8;
 }
@@ -15,6 +43,7 @@ body {
     flex: 1;
     justify-content: space-between;
     align-items: center;
+    /* padding: 0 100px; */
 }
 
 ul {
@@ -27,7 +56,7 @@ ul {
 
 .logo {
     font-size: 24px;
-    padding-left: 8px;
+    font-weight: 900;
 }
 
 li, .secondary {
@@ -49,15 +78,40 @@ h1 {
     font-weight: 900;
 }
 
+h3, .pCTA {
+    margin: 0;
+}
+
 button, .CTA {
     background-color: #3882f6;
     color: #e5e7eb;
     font-weight: 800;
-    
+    border-radius: 10px
+}
+
+button {
+    width: 100px;
+    height: 40px;
 }
 
 .quotebox {
-    background-color: #e5e7eb;
+    flex-direction: column;
+    padding: 20px 100px;
+}
+
+.CTA {
+    background-color: #3882f6;
+    padding: 50px;
+    margin: 50px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.leftCTA {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    font-weight: 100;
 }
 
 .quote {
@@ -66,22 +120,61 @@ button, .CTA {
     color: #1F2937
 }
 
+.author {
+    text-align: end;
+    font-weight: 800;
+}
+
 .sec-1 {
-    padding: 50px;
-    justify-content: space-around;
+    padding: 20px 100px 60px;
+    justify-content: space-between;
     align-items: center;
 }
 
 .hero {
     display: flex;
     flex-direction: column;
-    margin: 20px;
-    padding-right: 50px;
+    max-width: 450px;
 }
 
 .placeholder {
     background-color: grey;
-    width: 600px;
+    width: 500px;
     height: 250px;
-    padding-left: 30px;
+}
+
+.sec-main {
+    padding: 20px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info {
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.info-obj {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.infoimg {
+    flex: 0;
+    min-height: 100px;
+    width: 100px;
+    border-radius: 5px;
+    border: 3px solid #3882f6;
+}
+
+.subtext {
+    text-align: center;
+}
+
+.footer {
+    justify-content: center;
 }
