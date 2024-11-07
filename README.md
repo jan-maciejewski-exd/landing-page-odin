@@ -1,0 +1,1 @@
+This is a landing page excercise mini-project based off a design and assignment by The Odin Project course
