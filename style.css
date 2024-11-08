@@ -1,12 +1,11 @@
-* {
-    box-sizing: border-box;
-}
-
 body {
     margin: 0;
     font-family: Roboto, sans-serif;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    overflow-x: hidden;
 }
 
 .wideback1, .wideback-quote, .wideback-CTA, .wideback-footer {
@@ -31,20 +30,20 @@ body {
     margin: 0;
 }
 
-.header, .sec-1, .sec-main, .quotebox, .CTA, .footer {
+.header, .sec-1, .sec-main, .quotebox, .CTA {
     display: flex;
     width: 100%;
     max-width: 1000px;
     align-self: center;
 }
 
-.header, .sec-1, .footer {
+.header, .sec-1, footer {
+    flex: 1;
     background-color: #1F2937;
     color: #F9FAF8;
 }
 
 .header {
-    flex: 1;
     justify-content: space-between;
     align-items: center;
 }
@@ -96,6 +95,11 @@ button {
     width: 100px;
     height: 40px;
     border: 0;
+    cursor: pointer;
+}
+
+.CTA button {
+    border: 2px solid white;
 }
 
 .quotebox {
@@ -143,8 +147,9 @@ button {
 
 .placeholder {
     background-color: grey;
-    width: 500px;
+    width: 450px;
     height: 250px;
+    flex-shrink: 0;
 }
 
 .sec-main {
@@ -179,6 +184,10 @@ button {
     text-align: center;
 }
 
-.footer {
+footer {
     justify-content: center;
+    align-items: center;
+    min-width: 100vh;
+    color: #e5e7eb;
+    margin-bottom: 0px;
 }
